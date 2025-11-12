@@ -92,7 +92,7 @@ const sendMagicLink = async () => {
   const { error } = await supabase.auth.signInWithOtp({
     email: email.value,
     options: {
-      emailRedirectTo: 'http://172.20.10.3:3000/auth/callback',
+      emailRedirectTo: 'https://nuxt-health-tracker-vercel.vercel.app/auth/callback',
     },
   });
   
