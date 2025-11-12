@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  ssr: false,
+  ssr: false, // 关闭ssr,使用spa
   devServer: {
     host: '0.0.0.0', // 绑定所有网络接口，使局域网可访问
     port: 3000,      // 可选，指定端口
